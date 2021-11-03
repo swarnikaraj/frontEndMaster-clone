@@ -39,8 +39,8 @@
             {
               "itemname": "Getting Started with Javascript",
               "instructor": "Kyle Simpson",
-              "instructorImg": "https://static.frontendmasters.com/assets/courses/2019-06-20-getting-started-javascript-v2/thumb@2x.webp",
-              "courseimg": "https://static.frontendmasters.com/assets/courses/2018-01-30-css-grids-flexbox/thumb@2x.webp",
+              "instructorImg": "https://static.frontendmasters.com/assets/teachers/simpson/thumb@2x.webp",
+              "courseimg": "https://static.frontendmasters.com/assets/courses/2019-06-20-getting-started-javascript-v2/thumb.webp",
               "aboutcourse": "Get a tour of the building blocks of programming like variables, loops, functions and operations. Then learn the three main pillars of JavaScript: Types and Coercion, Scope and Closure and JavaScript’s “this” and Prototype system.",
               "preveiwvideolink": "",
               "insidebox_Watch_lectures": [
@@ -954,6 +954,6 @@
           ]
         }
       }
-    ],
-    "topicPath": []
+    ]
+    
   }
