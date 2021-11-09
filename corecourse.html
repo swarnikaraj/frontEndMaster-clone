@@ -23,6 +23,11 @@ body {
       scroll-behavior: smooth;
     }
 
+
+    .head_text{
+      margin-top: 100px;
+    }
+
     .core_img_div {
       width: 300px;
       height: 300px;
@@ -193,14 +198,20 @@ body {
     #head_banner_s {
       background-image: url(https://static.frontendmasters.com/assets/fm/med/learn/background-beginner.jpg);
 
-      height: 300px;
+     position: absolute;
+     top:0px;
+    
+
+     
+
+      height: 500px;
       width: 100%;
      
       background-position: 50%;
       opacity: 0.75;
       background-size: cover;
      
-      z-index: 1;
+      z-index: -10;
 
     }
 
@@ -233,8 +244,18 @@ body {
 
   
    #circle{
-     border:2px solid red;
+    
+     
+     height: 250px;
+     align-content: center;
+      text-align: center;
+
+      margin-top: 70px;
+      
+      
    }
+
+  
 
    
 
@@ -244,15 +265,17 @@ body {
       height: 210px;
       border-radius: 50%;
       background-color: rgb(78, 78, 78);
-      margin: auto;
-      margin-top: 20px;
-      margin-left: 18px;
-      margin-right: 18px;
+      margin:auto;
+      display: grid;
+      align-items: center;
+     
+      
       text-align: center;
     }
 
     .in_circle>h2 {
-      margin-top: 30%;
+     margin-top: 40%;
+     vertical-align: top;
       
     }
 
@@ -262,7 +285,10 @@ body {
       border-radius: 50%;
       background-color: #b8b5b5;
       margin: auto;
-       
+      display: grid;
+      align-items: center;
+     
+      
 
 
     }
@@ -278,6 +304,8 @@ body {
      text-align: center;
 
       width:1000px;
+
+      margin-top: 405px;
     }
 
 
@@ -293,10 +321,107 @@ body {
       padding: 5px;
 
     }
+
+
+
+
+
+
+    .navbar{
+    display: flex;
+    justify-content: space-between;
+   
+   
+    /* border: 1px solid black; */
+    padding-top: 0%;
+    background-color: rgb(63, 3, 3);
+    width: 100%;
+  
+   
+  height: 70px;
+    
+}
+#options{
+
+display: flex;
+justify-content:  space-between;
+margin-right: 2.5%;
+}
+.logo{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+#options h3{
+    /* padding-left:30px ; */
+    padding-right: 20px;
+    margin-top: 25px;
+}
+
+.nvtxt{
+    color: rgba(255, 255, 255, 0.582);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.nvtxt:hover{
+    color: white;
+}
+.diagonal{fill:#e66225;
+    height:24px;
+  width: 100%;
+  
+   
+}
+.btn1{
+   
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    margin-top: -10px;
+    border-radius: 25px;
+    background-color: rgb(199, 38, 38);
+    color: rgb(255, 255, 255);
+  
+}
+.btn1:hover{
+    background-color: firebrick;
+}
+
+
+
+
+
   </style>
 </head>
 
 <body>
+
+  <!-- start navbar -->
+
+  <div class="navbar">
+    <h3><a href=""><img class="logo" src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg" alt=""></a></h3>
+<div id="options">
+<h3><a style="text-decoration: none;" href=""><p class="nvtxt">Courses</p> </a></h3>
+<h3><a style="text-decoration: none;"href=""><p class="nvtxt">Learn</p></a></h3>
+<h3><a style="text-decoration: none;"href=""><p class="nvtxt">Pricing</p></a></h3>
+<h3><a style="text-decoration: none;"href=""><p class="nvtxt">Login</p></a></h3>
+<h3><a style="text-decoration: none;"href=""><p class="nvtxt btn1">Join Now</p></a></h3>
+
+</div>
+</div>
+
+<svg class="diagonal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none"><defs><linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#c02d28"></stop><stop offset="100%" stop-color="#e66225"></stop></linearGradient></defs><polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon></svg>
+    
+
+
+<!-- end navbar -->
+
+
+
+
+
 
   <div id='head_banner_s'>
 
@@ -328,6 +453,7 @@ body {
       </div>
 
     </div>
+   
 
 
 
