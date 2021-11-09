@@ -15,20 +15,20 @@
 
     #learn_path_div{margin: auto; border:2px solid green}
     .in_circle {
-      width: 180px;
-      height: 180px;
+      width: 190px;
+      height: 190px;
       border-radius: 50%;
       background-color: rgb(56, 56, 56);
       margin: auto;
-      margin-top:18px ;
+      margin-top:19px ;
       text-align: center;
     }
 
-    .in_circle>p{margin-top: 35%; font-size: 40px;}
+    .in_circle>p{margin-top: 30%; }
 
     .out_circle {
-      width: 220px;
-      height: 220px;
+      width: 230px;
+      height: 230px;
       border-radius: 50%;
       background-color: rgb(112, 112, 112);
       margin: auto;
@@ -85,19 +85,24 @@
       height: 500px;
       text-align: center;
       padding-top: 20px;
+      padding-left:20px ;
+      padding-right:20px ;
     }
 
     #lp_parent>div>.cont {
       text-align: center;
       margin: auto;
-      margin-top: 79px;
+      margin-top: 10px;
+      height:210px;
     }
+   
 
+    #counter{font-size: 60px; font-weight: 900;}
 
-
-    #lp_parent>div>div>button {
-      background-color: rgb(198, 53, 40);
-      border-color:rgb(198, 53, 40) ;
+   
+     #start-btn-div >button {
+      background-color: #c63528;;
+      border-color:#c63528; ;
       color: white;
       font-size: 14px;
       font-weight: 400;
@@ -105,6 +110,9 @@
       padding: 6px 40px;
       border-radius: 20px;
       cursor: pointer;
+      min-width: 175px;
+     
+     
     }
   </style>
 </head>
@@ -182,9 +190,13 @@
       
       pc=document.createElement('p')
       pc.innerText=counter + "%"
+      pc.setAttribute('id','counter')
 
       inner_circle.append(pc)
       outer_circle.append(inner_circle)
+
+
+
 
      
 
@@ -194,17 +206,22 @@
 
       p = document.createElement('p')
       p.innerHTML = item.about
+      p.style.fontSize='16px'
 
       div2 = document.createElement('div')
+      div3=document.createElement('div')
+     
       startbtn = document.createElement('button')
       startbtn.onclick = () => {
         openCourses(item)
       }
-
+      
       startbtn.innerText = 'start'
-      div2.append(h2, p, startbtn)
+      div3.append(startbtn)
+      div3.setAttribute('id','start-btn-div')
+      div2.append(h2, p)
       div2.setAttribute('class', 'cont')
-      div.append(outer_circle, div2)
+      div.append(outer_circle, div2,div3)
 
       lp_parent.append(div)
     });
